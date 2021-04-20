@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+<img src="arash.jpg" alt="Arash" style="width:100%">
+	<a href="https://twitter.com/">
+	<img src="image/twitter.png" border="0" alt="twitter icon" width="15" height="15"> Twiter
+	</a>
+	<a href="https://www.facebook.com/">
+	<img src="image/facebook.png" border="0" alt="fb icon" width="15" height="15"> Facebook
+	</a>
+	<a href="https://www.instagram.com/">
+	<img src="image/insta.png" border="0" alt="fb icon" width="15" height="15"> Instagram
+	</a>
+	<hr>
+	<a href="profile.html">Profile</a>
+	<a href="resume.html">Resume</a>
+	<a href="portfolio.html">Portfolio</a>
+	<a href="contact.html">Contact Me</a>
+	<a href="gallery.html">Gallery</a>
+</div>
+
+<div class="content" >
+	<h2>Contact Me</h2><hr>
+	<p>Feel free to contact me and leave your message here.</p>
+	
+	<div class="container">
+	  <form action="/action_page.php">
+		<label for="name"><b>Full Name:</b></label>
+		<input type="text" id="name" name="name" placeholder="Your name..">
+				
+		<label for="gender"><b>Gender: </b></label>
+		<input type="radio" name="gender" value="male" checked>Male
+		<input type="radio" name="gender" value="female">Female
+		
+		<br><br>
+		<label for="email"><b>Email:</b></label>
+		<input type="text" id="email" name="email" placeholder="Your email..">
+		
+		<label for="phoneNo"><b>Phone Number:</b></label>
+		<input type="text" id="phoneNo" name="phoneNo" placeholder="Your phone number..">
+		
+		<label for="option"><b>Purpose of Contact:</b></label>
+		<select name="option" id="opt">
+		<option>-Select Purpose-</option>
+		<option>For Hiring</option>
+		<option>Meeting</option>
+		<option>Others</option>
+		</select>
+
+		<label for="message"><b>Message:</b></label>
+		<textarea id="message" name="message" placeholder="Leave your message here.." style="height:80px"></textarea>
+				
+		<label for="gender"><b>Respond Your Message by: </b></label>
+		<input type="checkbox" name="contact" value="phone1" checked>Phone Number
+		<input type="checkbox" name="contact1" value="email1">Email
+		<br><br>
+		
+		<button type="reset" class="btn default">Reset</button>
+		<button type="submit" class="btn success">Submit</button>
+	  </form>
+	</div>
+</div>
+
+</body>
+</html>

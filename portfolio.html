@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.zoom 
+{
+	padding: 0px;
+	transition: transform .75s; /* Animation */
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+}
+.zoom:hover 
+{
+	transform: scale(1.8);
+}
+
+#top1
+{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	display: block;
+}
+#top1:hover 
+{
+	background-color: grey;
+}
+
+.button 
+{
+	border-radius: 4px;
+	background-color: #000000;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 17px;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	opacity: 0.5;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+</style>
+</head>
+
+<body>
+<div class="sidenav">
+<img src="image/arash.jpg" alt="Arash" style="border-radius: 50%" width="100%">
+	<a href="https://twitter.com/">
+	<img src="image/twitter.png" border="0" alt="twitter icon" style="border-radius: 50%" width="15" height="15"> Twiter
+	</a>
+	<a href="https://www.facebook.com/">
+	<img src="image/facebook.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Facebook
+	</a>
+	<a href="https://www.instagram.com/">
+	<img src="image/insta.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Instagram
+	</a>
+	<hr>
+	<a href="profile.html">Profile</a>
+	<a href="resume.html">Resume</a>
+	<a href="portfolio.html">Portfolio</a>
+	<a href="contact.html">Contact Me</a>
+	<a href="gallery.html">Gallery</a>
+</div>
+
+<p id="top"></p>
+<div class="content" >
+	<h2>Portfolio</h2><hr>
+	<p>My project in developing system and web.</p>
+	
+	<div align="justify" class="container">
+		<p>During my internship at Turbine Technique, I was placed in System Development Department(SDD). 
+		SDD need to make a system that can record any fault report regarding to the system and items when parliament staff make a report. 
+		The parliament staff can only report the system and items that only listed in maintenance contract. 
+		The system can store all the report made by parliament staff and SDD team can view the report from the system. 
+		There are two type of users for this system which is parliament staff(user) and SDD staff(admin).
+		</p> 
+		
+		<table>
+			<tr>
+				<td align="center"><img src="image/parlimen.png" alt="parlimen" style="width:80%"></td>
+			</tr>
+			<tr>
+				<td align="center">Homepage for Fault Reporting System for Dewan Parlimen Sementara(DPS)</td>
+			</tr>
+		</table><br>
+		
+		<p align="center"><i>Click 'User' or 'Admin' below to view the interface of this system.</i></p>
+		<div align="center" >
+			<a href="#user"><button type="button" class="button">User</button></a>
+			<a href="#admin"><button type="button" class="button">Admin</button></a>
+		</div><br><hr>
+		
+		<p id="user"></p>
+		<h2 align="center"><u>Interface for User</u></h2>
+		<table border="0">
+			<tr>
+				<td><img src="image/daftar.png" alt="parlimen" class="zoom"></td>
+				<td><img src="image/resetpassword.png" alt="parlimen" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">User can fill the form to register in order to use the system</p></td>
+				<td><p align="center">User can reset password if they forgot their password</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/loginuser.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/interfaceuser.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">User can enter email and password to login the system</p></td>
+				<td><p align="center">Interface for user after login</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/kemaskiniprofil.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/tukarpassword.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">User can update their details</p></td>
+				<td><p align="center">User can change their password</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/buataduan.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/senaraiaduan1.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">User can fill the form to make a report</p></td>
+				<td><p align="center">User can view their own report</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/senaraiaduan2.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/search.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">User can view other users' report</p></td>
+				<td><p align="center">User can search other users' report</p></td>
+			</tr>
+		</table><hr>
+		
+		<p id="admin"></p>
+		<h2 align="center"><u>Interface for Admin</u></h2>
+		<table border="0">
+			<tr>
+				<td><img src="image/loginadmin.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/interfaceadmin.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">Admin can enter username and password to login the system</p></td>
+				<td><p align="center">Interface for admin after login</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/senaraipengguna.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/rekodpengguna.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">Admin can view list of users</p></td>
+				<td><p align="center">Admin can view the record of users</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/daftarpengguna.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/buangrekod.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">Admin can register password for users</p></td>
+				<td><p align="center">Admin can delete users' account</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/senaraiaduan3.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/rekodaduan.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">Admin can view list of report made by users</p></td>
+				<td><p align="center">Admin can view the record of report</p></td>
+			</tr>
+			<tr>
+				<td><img src="image/updaterekod.png" alt="parlimen" style="width:100%" class="zoom"></td>
+				<td><img src="image/search1.png" alt="parlimen" style="width:100%" class="zoom"></td>
+			</tr>
+			<tr>
+				<td><p align="center">Admin can update the status of report</p></td>
+				<td><p align="center">Admin can search the report made by users</p></td>
+			</tr>
+		</table>
+		<a href="#top"><button id="top1">Top</button></a>
+	</div>
+</div>
+
+</body>
+</html>
